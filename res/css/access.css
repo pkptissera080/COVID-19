@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E9ECEF;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+    color: darkgray;
+}
+
+.accessbox {
+    width: 350px;
+    height: auto;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 10px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+
+.accessbox p {
+    margin: 0;
+    padding: 0;
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+.accessbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.accessbox input[type="email"],
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid darkgray;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: dodgerblue;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+.accessbox input[type="text"]:focus,
+input[type="password"]:focus {
+    border-bottom: 2px solid #ffc107;
+}
+
+.accessbox input[type="submit"],
+input[type="button"],
+button {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #67b12f;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+
+.accessbox input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.accessbox a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+    transition: 0.25s;
+    font-family: "Montserrat", sans-serif;
+}
+
+.accessbox a:hover {
+    color: #ffc107;
+}
+
+.error {
+    color: #FF7800;
+}
+
+::placeholder {
+    color: #ddd;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ddd;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ddd;
+}
+
+.dangeralert {
+    color: gray;
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+    margin-bottom: 15px;
+    padding: 4px 12px;
+}
+
+.successalert {
+    color: gray;
+    background-color: #ddffdd;
+    border-left: 6px solid #4CAF50;
+    margin-bottom: 15px;
+    padding: 4px 12px;
+}
